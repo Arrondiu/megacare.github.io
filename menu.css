@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('background.jpg');
+    /* Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.blank {
+    margin-bottom: 25px;
+}
+
+main {
+    padding: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+main h1 {
+    color: lightpink;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.sectionId {
+    margin-top: 20px;
+}
+
+.menu-category {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    padding: 0 25px 25px 25px;
+    position: relative;
+    width: 100%;
+    /* Take full width */
+    max-width: 600px;
+}
+
+.menu-category h4 {
+    color: lightpink;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name {
+    color: black;
+}
+
+.item-price {
+    color: lightpink;
+    font-weight: bold;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.gel {
+    margin-top: -15px;
+    color: green;
+    font-size: 12px;
+}
+
+.price-range {
+    float: right;
+    color: lightpink;
+    font-weight: bold;
+}
+
+.waxing-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.waxing-list ul {
+    width: 100%;
+}
+
+.list1 {
+    margin-right: 30px;
+}
+
+.list2 {
+    margin-left: 30px;
+}
+
+footer {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}

@@ -75,12 +75,13 @@ nav ul li a:hover {
 }
 
 #home .btn {
-    background-color: #ff6f61;
+    background-color: lightpink;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -131,11 +132,12 @@ nav ul li a:hover {
 
 .service-subsection {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .service-card {
     margin: 20px;
-    display: inline-block;
     max-width: 360px;
     min-width: 360px;
     text-align: left;
@@ -144,7 +146,13 @@ nav ul li a:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     vertical-align: top;
+    transition: all 0.5s ease;
     color: #333;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
@@ -182,11 +190,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.waxing-list {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* About Us section styles */
 
 #about {
@@ -201,6 +204,7 @@ nav ul li a:hover {
     font-size: 18px;
     color: #555;
 }
+
 
 /* Contact section styles */
 
@@ -253,9 +257,9 @@ nav ul li a:hover {
 /* Footer styles */
 
 footer {
+    background-color: lightpink;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
+    padding: 1rem 0;
+    width: 100%;
 }
