@@ -16,4 +16,9 @@
     color: white;
     font-weight: bold;
     margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
 }
