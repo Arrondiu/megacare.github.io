@@ -122,12 +122,12 @@ nav ul li a:hover {
 /* Services section styles */
 
 #services {
-    background-image: url(images/background.jpg);
+    /*background-image: url(images/background.jpg);*/
     background-position: center;
     background-size: cover;
     padding: 40px 0;
     text-align: center;
-    color: snow;
+    color: #333;
 }
 
 .service-subsection {
@@ -136,16 +136,25 @@ nav ul li a:hover {
     justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .service-subsection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.service-subsection a {
+    text-decoration: none;
+}
+
 .service-card {
     margin: 20px;
     max-width: 360px;
     min-width: 360px;
-    text-align: left;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    vertical-align: top;
     transition: all 0.5s ease;
     color: #333;
 }
@@ -169,92 +178,11 @@ nav ul li a:hover {
     color: #555;
 }
 
-.fill {
-    margin-left: 20px;
-}
-
 .price-range {
     font-weight: bold;
     color: #ff6f61;
     margin-top: 5px;
 }
-
-.description {
-    font-size: 16px;
-    color: #555;
-    margin-top: 10px;
-}
-
-.gel {
-    color: green;
-    font-weight: bold;
-}
-
-/* About Us section styles */
-
-#about {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-    color: #555;
-}
-
-
-/* Contact section styles */
-
-#contact {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-#contact label {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #333;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    color: #555;
-}
-
-#contact button {
-    background-color: #ff6f61;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #e35448;
-}
-
-/* Footer styles */
 
 footer {
     background-color: lightpink;
