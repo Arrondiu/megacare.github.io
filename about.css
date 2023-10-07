@@ -31,6 +31,12 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
 .about-content {
     flex: 1;
     max-width: 500px;
@@ -57,12 +63,6 @@ footer {
     background-color: lightpink;
     color: #fff;
     font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-    }
 }
 
 #call {
